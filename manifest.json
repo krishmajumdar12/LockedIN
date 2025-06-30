@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "LockedIN",
+    "version": "1.0",
+    "description": "Block distractions and boost focus.",
+    "permissions": ["tabs", "storage", "activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*", "*://*.reddit.com/*", "*://*.instagram.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
