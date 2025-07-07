@@ -9,7 +9,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["*://*.youtube.com/*", "*://*.reddit.com/*", "*://*.instagram.com/*"],
+        "matches": ["<all_urls>"],
         "js": ["content.js"]
       }
     ]
