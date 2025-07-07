@@ -2,9 +2,19 @@
     "manifest_version": 3,
     "name": "LockedIN",
     "version": "1.0",
-    "description": "Block distractions and boost focus.",
+    "description": "Stay focused and block distracting websites during work sessions with a simple, pomodoro timer-based overlay.",
     "permissions": ["tabs", "storage", "activeTab", "scripting"],
+    "icons": {
+      "16": "icons/logo.png",
+      "48": "icons/logo.png",
+      "128": "icons/logo.png"
+    },
     "action": {
+      "default_icon": {
+        "16": "icons/logo.png",
+        "48": "icons/logo.png",
+        "128": "icons/logo.png"
+      },
       "default_popup": "popup.html"
     },
     "content_scripts": [
